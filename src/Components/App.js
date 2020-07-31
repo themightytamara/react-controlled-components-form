@@ -1,23 +1,17 @@
-import React, {Component} from "react";
-import "./App.css";
-import RegistrationForm from "./RegistrationForm";
-import FillerText from './FillerText';
-import Webpage from './Webpage';
+import React, { Component } from 'react';
+import './App.css';
+import FormContainer from './containers/FormContainer';
 
-function App() {
-   return (
-
-  
-      <div><RegistrationForm />
-     <FillerText />
-   <Webpage /></div>
-   
-   )
-  
+class App extends Component {
+  render() {
+    return (
+      <div className="col-md-6">
+        <h3> Controlled Form</h3>
+        <FormContainer />
+      </div>
+    );
+  }
 }
-
-
-
-
+console.log({FormContainer});
 
 export default App;
